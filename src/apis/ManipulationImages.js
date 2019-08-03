@@ -1,5 +1,5 @@
 const { get } = require('superagent');
-const version = require('../../../package.json').version; // eslint-disable-line prefer-destructuring
+const version = require('../../package.json').version; // eslint-disable-line prefer-destructuring
 
 /**
 * @class ManipulationImages
