@@ -16,7 +16,7 @@ class EmiliaAPI {
         this.version = require('./package.json').version;
     }
     
-    this.manipulationImages = new ManipulationImages(token, 'https://emilia-api.glitch.me');
+    manipulationImages = new ManipulationImages(token, 'https://emilia-api.glitch.me');
 }
 
 module.exports = EmiliaAPI;
