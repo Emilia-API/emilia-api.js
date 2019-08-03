@@ -1,3 +1,1 @@
-module.exports = {
-    Client: require('./Classes/Client')
-};
+module.exports = require('./Classes/Client');
