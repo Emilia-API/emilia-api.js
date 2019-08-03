@@ -1,3 +1,3 @@
 module.exports = {
-    Client : require('./Classes/Client')
+    Client: require('./Classes/Client')
 };
