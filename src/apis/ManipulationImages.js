@@ -1,8 +1,8 @@
 const { get } = require('superagent');
-const version = require("../../../package.json").version; // eslint-disable-line prefer-destructuring
+const version = require('../../../package.json').version; // eslint-disable-line prefer-destructuring
 
 /**
-* @class ManipulationImage
+* @class ManipulationImages
 */
 class ManipulationImages {
 	
@@ -13,7 +13,7 @@ class ManipulationImages {
      * @param {String} url - Base api url to make a http request.
      */
     constructor(token, url) {
-      
+
              /**
              * @param {String} image - The image to be used in the returned image results
              * @returns {Promise<Buffer>}
