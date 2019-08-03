@@ -2,9 +2,9 @@ const { get } = require('superagent');
 const version = require("../../../package.json").version; // eslint-disable-line prefer-destructuring
 
 /**
-* @class ImageManipulation
+* @class ManipulationImage
 */
-class ImageManipulation {
+class ManipulationImage {
 	
     /**
      * @author Fatir | Sakuta#2103
@@ -175,4 +175,4 @@ class ImageManipulation {
     }
 }
 
-module.exports = ImageManipulation;
+module.exports = ManipulationImage;
