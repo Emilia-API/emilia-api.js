@@ -1,4 +1,4 @@
-const ManipulationImage = require('./src/apis/images');
+const ManipulationImages = require('./src/apis/ManipulationImages');
 
 /**
 * @class Client
@@ -13,7 +13,7 @@ class EmiliaAPI {
     constructor(token) {
 
         this.version = require('../../package.json').version;
-        this.manipulationImage = new ManipulationImage(token, 'https://emilia-api.glitch.me');
+        this.manipulationImage = new ManipulationImages(token, 'https://emilia-api.glitch.me');
         if (!token) return new Error("[EMILIA_API_ERROR] Missing parameter 'token'");
 
     }
