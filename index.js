@@ -1,10 +1,10 @@
-const ManipulationImage = require('./API/ManipulationImage');
+const ManipulationImage = require('./src/apis/images');
 
 /**
 * @class Client
 * @classdesc emilia-api.js - An API wrapper for https://emilia-api.glitch.me
 */
-class Client {
+class EmiliaAPI {
 
     /**
      * @author Fatir | Sakuta#2103
@@ -19,4 +19,4 @@ class Client {
     }
 }
 
-module.exports = Client;
+module.exports = EmiliaAPI;
