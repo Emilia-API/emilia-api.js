@@ -8,14 +8,14 @@ class EmiliaAPI {
 
     /**
      * @author Fatir | Sakuta#2103
-     * @param {String} token The token to pass the authentication api. 
+     * @constructor
+     * @param {String} token - Your Emilia-api access token. 
      */
     constructor(token) {
-
+        if (typeof token !== 'string') throw new Error('[EMILIA_API_ERROR] Please make sure your token is a string');
         this.version = require('../../package.json').version;
-        this.manipulationImage = new ManipulationImages(token, 'https://emilia-api.glitch.me');
-        if (!token) return new Error("[EMILIA_API_ERROR] Missing parameter 'token'");
-
+        this.manipulationImages = new ManipulationImages(token, 'https://emilia-api.glitch.me');
+ 
     }
 }
 
