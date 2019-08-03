@@ -13,7 +13,7 @@ class EmiliaAPI {
      */
     constructor(token) {
         if (typeof token !== 'string') throw new Error('[EMILIA_API_ERROR] Please make sure your token is a string');
-        this.version = require('../../package.json').version;
+        this.version = require('./package.json').version;
         this.manipulationImages = new ManipulationImages(token, 'https://emilia-api.glitch.me');
  
     }
