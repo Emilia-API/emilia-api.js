@@ -4,17 +4,18 @@ const version = require("../../../package.json").version; // eslint-disable-line
 /**
 * @class ManipulationImage
 */
-class ManipulationImage {
+class ManipulationImages {
 	
     /**
      * @author Fatir | Sakuta#2103
+     * @constructor
      * @param {String} token - The token to pass the authentication api. 
      * @param {String} url - Base api url to make a http request.
      */
     constructor(token, url) {
       
              /**
-             * @param {String} image - The image to be used
+             * @param {String} image - The image to be used in the returned image results
              * @returns {Promise<Buffer>}
              */
             this.pokemon3000Years = async (image) => {
@@ -80,7 +81,7 @@ class ManipulationImage {
             }
 
             /**
-             * @param {String} image - The image to be used
+             * @param {String} image - The image to be used in the returned image results
              * @param {Boolean} silhouetted Whether the image should be silhouetted or no, default to false
              * @returns {Promise<Buffer>}
              */
@@ -94,7 +95,7 @@ class ManipulationImage {
             }
 
             /**
-             * @param {String} image - The image to be used
+             * @param {String} image - The image to be used in the returned image results
              * @param {String} title - The title for poster
              * @param {String} text - The text as the poster description
              * @returns {Promise<Buffer>}
@@ -109,7 +110,7 @@ class ManipulationImage {
             }
 
             /**
-             * @param {String} image - The image to be used
+             * @param {String} image - The image to be used in the returned image results
              * @returns {Promise<Buffer>}
              */
             this.fire = async (image) => {
@@ -122,7 +123,7 @@ class ManipulationImage {
             }
             
             /**
-             * @param {String} image - The image to be used
+             * @param {String} image - The image to be used in the returned image results
              * @returns {Promise<Buffer>}
              */
             this.fusion = async (image) => {
@@ -135,7 +136,7 @@ class ManipulationImage {
             }
 
             /**
-             * @param {String} image - The image to be used
+             * @param {String} image - The image to be used in the returned image results
              * @returns {Promise<Buffer>}
              */
             this.thugLife = async (image) => {
@@ -148,7 +149,7 @@ class ManipulationImage {
             }
 
             /**
-             * @param {String} image - The image to be used
+             * @param {String} image - The image to be used in the returned image results
              * @returns {Promise<Buffer>}
              */
             this.toBeContinued = async (image) => {
@@ -161,7 +162,7 @@ class ManipulationImage {
             }
 
             /**
-             * @param {String} image - The image to be used
+             * @param {String} image - The image to be used in the returned image results
              * @returns {Promise<Buffer>}
              */
             this.wanted = async (image) => {
@@ -175,4 +176,4 @@ class ManipulationImage {
     }
 }
 
-module.exports = ManipulationImage;
+module.exports = ManipulationImages;
