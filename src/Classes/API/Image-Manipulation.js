@@ -175,4 +175,4 @@ class ImageManipulation {
     }
 }
 
-module.exports = { ImageManipulation };
+module.exports = ImageManipulation;
