@@ -1,4 +1,4 @@
-const { ImageManipulation } = require('./API/Image-Manipulation');
+const ImageManipulation = require('./API/Image-Manipulation');
 
 /**
 * @class Client
@@ -19,4 +19,4 @@ class Client {
     }
 }
 
-module.exports = { Client };
+module.exports = Client;
