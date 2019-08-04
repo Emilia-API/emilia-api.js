@@ -15,7 +15,7 @@
   </a>
 </p>
 
-Official API wrapper for [Emilia API](https://emilia-api.glitch.me)
+<p align="center">Official API wrapper for <a href="https://emilia-api.glitch.me">Emilia API</a></p>
 
 ## Getting started
 Installing...
