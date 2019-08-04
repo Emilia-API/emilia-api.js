@@ -24,7 +24,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/3000-years/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ image });
       return result.body;
     };
 
@@ -40,7 +40,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/achievement/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ text: text });
+        .query({ text });
       return result.body;
     };
 
@@ -56,7 +56,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/approved/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ image });
       return result.body;
     };
 
@@ -72,7 +72,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/beautiful/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ image });
       return result.body;
     };
 
@@ -88,7 +88,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/brazzers/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ image });
       return result.body;
     };
 
@@ -105,7 +105,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/challenger/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image, silhouetted: silhouetted });
+        .query({ image, silhouetted });
       return result.body;
     };
 
@@ -117,11 +117,11 @@ class ManipulationImages {
      */
     this.demotivational = async (image, title, text) => {
       if (
-        !image ||
-        typeof image !== "string" ||
         !title ||
-        typeof title !== "string" ||
+        typeof image !== "string" ||
         !text ||
+        typeof title !== "string" ||
+        !image ||
         typeof text !== "string"
       )
         throw new Error(
@@ -130,7 +130,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/demotivational/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image, title: title, text: text });
+        .query({ title, text, image });
       return result.body;
     };
 
@@ -146,7 +146,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/fire/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ image });
       return result.body;
     };
 
@@ -179,7 +179,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/thug-life/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ image });
       return result.body;
     };
 
@@ -195,7 +195,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/to-be-continued/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ image });
       return result.body;
     };
 
@@ -211,7 +211,7 @@ class ManipulationImages {
       const result = await get(`${url}/api/wanted/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ image });
       return result.body;
     };
   }
