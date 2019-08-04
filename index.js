@@ -4,7 +4,7 @@ const RandomImages = require("./src/apis/RandomImages");
 
 /**
  * @class Client
- * @classdesc emilia-api.js - An API wrapper for https://emilia-api.glitch.me
+ * @classdesc emilia-api.js - Official API wrapper for https://emilia-api.glitch.me
  */
 class EmiliaAPI {
   /**
