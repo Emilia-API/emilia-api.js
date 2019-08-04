@@ -17,7 +17,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.pokemon3000Years = async image => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -33,7 +33,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.achievement = async text => {
-      if (!text || typeof text !== "string")
+      if (typeof text !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -49,7 +49,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.approved = async image => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -65,7 +65,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.beautiful = async image => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -81,7 +81,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.brazzers = async image => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -98,7 +98,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.challenger = async (image, silhouetted = false) => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -136,7 +136,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.fire = async image => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -169,7 +169,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.thugLife = async image => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -185,7 +185,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.toBeContinued = async image => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
@@ -201,7 +201,7 @@ class ManipulationImages {
      * @returns {Promise<Buffer>}
      */
     this.wanted = async image => {
-      if (!image || typeof image !== "string")
+      if (typeof image !== "string")
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
