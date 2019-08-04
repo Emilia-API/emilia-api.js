@@ -2,7 +2,7 @@ const { get } = require("superagent");
 const version = require("../../package.json").version; // eslint-disable-line prefer-destructuring
 
 /**
- * @class Other
+ * @class Others
  */
 class Others {
   /**
