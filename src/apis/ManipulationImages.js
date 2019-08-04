@@ -110,19 +110,16 @@ class ManipulationImages {
     };
 
     /**
-     * @param {string} image - The image to be used in the returned image results
      * @param {string} title - The title for poster
      * @param {string} text - The text as the poster description
+     * @param {string} image - The image to be used in the returned image results
      * @returns {Promise<Buffer>}
      */
-    this.demotivational = async (image, title, text) => {
+    this.demotivational = async (title, text, image) => {
       if (
-        !title ||
-        typeof image !== "string" ||
-        !text ||
         typeof title !== "string" ||
-        !image ||
-        typeof text !== "string"
+        typeof text !== "string" ||
+        typeof image !== "string"
       )
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image/title/text or that image/title/text isn't a string."
