@@ -1,5 +1,5 @@
 {
-  "name": "emillia-api",
+  "name": "emilia-api.js",
   "version": "1.0.0",
   "description": "An api wrapper for https://emilia-api.glitch.me/",
   "main": "index.js",
@@ -47,7 +47,6 @@
     ]
   },
   "dependencies": {
-    "superagent": "^5.1.0",
-    "synchronous-ify": "github:jDevxyz/synchronous-ify"
+    "superagent": "^5.1.0"
   }
 }
