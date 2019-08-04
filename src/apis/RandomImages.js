@@ -2,9 +2,9 @@ const { get } = require("superagent");
 const version = require("../../package.json").version; // eslint-disable-line prefer-destructuring
 
 /**
- * @class RandomImage
+ * @class RandomImages
  */
-class RandomImage {
+class RandomImages {
   /**
    * @author Fatir | Sakuta#4350
    * @constructor
@@ -54,4 +54,4 @@ class RandomImage {
   }
 }
 
-module.exports = RandomImage;
+module.exports = RandomImages;
