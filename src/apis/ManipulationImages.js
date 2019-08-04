@@ -151,18 +151,19 @@ class ManipulationImages {
     };
 
     /**
-     * @param {string} image - The image to be used in the returned image results
+     * @param {string} baseImage - The 1st image
+     * @param {string} overlayImage - The 2nd image
      * @returns {Promise<Buffer>}
      */
-    this.fusion = async image => {
-      if (!image || typeof image !== "string")
+    this.fusion = async (baseImage, overlayImage) => {
+      if (typeof baseImage !== "string" || typeof overlayImage !== "string")
         throw new Error(
-          "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
+          "[EMILIA-API-ERROR] Missing parameter baseImage/overlayImage or that baseImage/overlayImage isn't a string."
         );
       const result = await get(`${url}/api/fusion/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image: image });
+        .query({ baseImage, overlayImage });
       return result.body;
     };
 
