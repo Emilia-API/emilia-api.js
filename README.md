@@ -1,18 +1,14 @@
 <h1 align="center">Emilia-Api.js</h1>
 
 <p align="center">
-  <a href="#">
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/KurokuTetsuya/emilia-api.js.svg">
-  </a>
-  <a href='https://circleci.com/gh/KurokuTetsuya/emilia-api.js/'>
-    <img src='https://circleci.com/gh/KurokuTetsuya/emilia-api.js/tree/master.svg?style=svg' alt='CircleCI Status' />
-  </a>
-  <a href='https://travis-ci.org/KurokuTetsuya/emilia-api.js'>
-    <img alt="TravisCI Status" src="https://travis-ci.org/KurokuTetsuya/emilia-api.js.svg?branch=master">
-  </a>
-  <a href='https://github.com/KurokuTetsuya/emilia-api.js/blob/master/package.json'>
-    <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/KurokuTetsuya/emilia-api.js.svg">
-  </a>
+  <a href="https://discord.gg/ZEFrfj5"><img src="https://discordapp.com/api/guilds/582372920047829014/embed.png" alt="discord-server" /></a>
+  <a href="https://www.npmjs.com/package/emilia-api.js"><img src="https://img.shields.io/npm/v/emilia-api.js.svg" alt="npm-version" /></a>
+  <a href="https://www.npmjs.com/package/emilia-api.js"><img src="https://img.shields.io/npm/dt/emilia-api.js.svg" alt="npm-downloads" /></a>
+  <a href="https://david-dm.org/KurokuTetsuya/emilia-api.js"><img src="https://img.shields.io/david/KurokuTetsuya/emilia-api.js.svg" alt="npm-dependencies" /></a>
+  <a href="#"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/KurokuTetsuya/emilia-api.js.svg"></a>
+  <a href='https://circleci.com/gh/KurokuTetsuya/emilia-api.js/'><img src='https://circleci.com/gh/KurokuTetsuya/emilia-api.js/tree/master.svg?style=svg' alt='CircleCI Status' /></a>
+  <a href='https://travis-ci.org/KurokuTetsuya/emilia-api.js'><img alt="TravisCI Status" src="https://travis-ci.org/KurokuTetsuya/emilia-api.js.svg?branch=master"></a>
+  <a href='https://github.com/KurokuTetsuya/emilia-api.js/blob/master/package.json'><img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/KurokuTetsuya/emilia-api.js.svg"></a>
 </p>
 
 <p align="center">Official API wrapper for <a href="https://emilia-api.glitch.me">Emilia API</a></p>
@@ -22,6 +18,9 @@ Installing...
 ```bash
 npm install emilia-api.js --save
 ``` 
+### Authentication
+> If you don't have the token required to access this emilia API, please make an application token request on the discord server [here](https://discord.gg/ZEFrfj5)
+
 Initializing...
 ```js
 const EmiliaAPI = require("emilia-api.js");
