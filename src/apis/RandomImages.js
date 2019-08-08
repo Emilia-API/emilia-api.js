@@ -51,6 +51,66 @@ class RandomImages {
         .set("User-Agent", `Emilia-API Wrapper ${version}`);
       return result.body;
     };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.tickle = async () => {
+      const result = await get(`${url}/api/tickle`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.poke = async () => {
+      const result = await get(`${url}/api/poke`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.smug = async () => {
+      const result = await get(`${url}/api/smug`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.pat = async () => {
+      const result = await get(`${url}/api/pat`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.blush = async () => {
+      const result = await get(`${url}/api/blush`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.dance = async () => {
+      const result = await get(`${url}/api/dance`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
   }
 }
 

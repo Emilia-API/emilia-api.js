@@ -211,6 +211,41 @@ class ManipulationImages {
         .query({ image });
       return result.body;
     };
+
+    /**
+     * @param image - The image to be used
+     * @returns {Promise<Buffer>}
+     */
+
+    this.worthless = async image => {
+      if (typeof image !== "string")
+        throw new Error(
+          "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
+        );
+      const result = await get(`${url}/api/worthless/`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`)
+        .query({ image });
+      return result.body;
+    };
+
+    /**
+     * @param image - The image to be used
+     * @param level - The level of distortion
+     * @returns {Promise<Buffer>}
+     */
+
+    this.distort = async (image, level) => {
+      if (typeof image !== "string")
+        throw new Error(
+          "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
+        );
+      const result = await get(`${url}/api/distort/`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`)
+        .query({ image });
+      return result.body;
+    };
   }
 }
 
