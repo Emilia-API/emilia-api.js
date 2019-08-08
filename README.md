@@ -68,6 +68,12 @@ emiliaApi.manipulationImages.toBeContinued(image: String<Url>);
 ```js
 emiliaApi.manipulationImages.wanted(image: String<Url>);
 ```
+```js
+emiliaApi.manipulationImages.worthless(image: String<Url>);
+```
+```js
+emiliaApi.manipulationImages.distort(image: String<Url>, level: Number);
+```
 
 ### Random images API
 ```js
@@ -81,6 +87,24 @@ emiliaApi.randomImages.kiss()
 ```
 ```js
 emiliaApi.randomImages.slap()
+```
+```js
+emiliaApi.randomImages.tickle()
+```
+```js
+emiliaApi.randomImages.poke()
+```
+```js
+emiliaApi.randomImages.smug()
+```
+```js
+emiliaApi.randomImages.pat()
+```
+```js
+emiliaApi.randomImages.blush()
+```
+```js
+emiliaApi.randomImages.dance()
 ```
 
 ### Others API
