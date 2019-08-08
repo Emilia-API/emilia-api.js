@@ -240,10 +240,14 @@ class ManipulationImages {
         throw new Error(
           "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
         );
+      if (typeof level !== "number")
+        throw new Error(
+          "[EMILIA-API-ERROR] Missing parameter level or that image isn't a number."
+        )
       const result = await get(`${url}/api/distort/`)
         .set("Authorization", `Bearer ${token}`)
         .set("User-Agent", `Emilia-API Wrapper ${version}`)
-        .query({ image });
+        .query({ image, level });
       return result.body;
     };
   }
