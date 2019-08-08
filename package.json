@@ -1,6 +1,6 @@
 {
   "name": "emilia-api.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Official API wrapper for https://emilia-api.glitch.me/",
   "main": "index.js",
   "scripts": {
