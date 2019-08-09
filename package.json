@@ -47,6 +47,6 @@
     ]
   },
   "dependencies": {
-    "superagent": "^5.1.0"
+    "node-superfetch": "^0.1.9"
   }
 }
