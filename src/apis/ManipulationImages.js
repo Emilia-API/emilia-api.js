@@ -61,6 +61,22 @@ class ManipulationImages {
     };
 
     /**
+     * @param {string} image - The image to be used for the background
+     * @returns {Promise<Buffer>}
+     */
+    this.rejected = async image => {
+      if (typeof image !== "string")
+        throw new Error(
+          "[EMILIA-API-ERROR] Missing parameter image or that image isn't a string."
+        );
+      const result = await get(`${url}/api/rejected/`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`)
+        .query({ image });
+      return result.body;
+    };
+
+    /**
      * @param {string} image - The image to be used for the meme
      * @returns {Promise<Buffer>}
      */
