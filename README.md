@@ -41,6 +41,9 @@ emiliaApi.manipulationImages.achievement(text: String);
 emiliaApi.manipulationImages.approved(image: String<Url>);
 ```
 ```js
+emiliaApi.manipulationImages.rejected(image: String<Url>);
+```
+```js
 emiliaApi.manipulationImages.beautiful(image: String<Url>);
 ```
 ```js
