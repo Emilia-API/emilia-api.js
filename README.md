@@ -117,5 +117,5 @@ emiliaApi.others.hangman()
 emiliaApi.others.hangmanList()
 ```
 ```js
-emiliaApi.randomAnime()
+emiliaApi.others.randomAnime()
 ```
