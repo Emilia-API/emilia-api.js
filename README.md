@@ -108,6 +108,27 @@ emiliaApi.randomImages.blush()
 ```js
 emiliaApi.randomImages.dance()
 ```
+```js
+emiliaApi.randomImages.cry()
+```
+```js
+emiliaApi.randomImages.stare()
+```
+```js
+emiliaApi.randomImages.nom()
+```
+```js
+emiliaApi.randomImages.hold()
+```
+```js
+emiliaApi.randomImages.lick()
+```
+```js
+emiliaApi.randomImages.wave()
+```
+```js
+emiliaApi.randomImages.thumbsup()
+```
 
 ### Others API
 ```js
@@ -117,5 +138,5 @@ emiliaApi.others.hangman()
 emiliaApi.others.hangmanList()
 ```
 ```js
-emiliaApi.randomAnime()
+emiliaApi.others.randomAnime()
 ```

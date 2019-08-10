@@ -1,4 +1,4 @@
-const { get } = require("superagent");
+const { get } = require("node-superfetch");
 const version = require("../../package.json").version; // eslint-disable-line prefer-destructuring
 
 /**
