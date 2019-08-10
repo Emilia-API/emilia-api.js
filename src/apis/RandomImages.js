@@ -111,6 +111,76 @@ class RandomImages {
         .set("User-Agent", `Emilia-API Wrapper ${version}`);
       return result.body;
     };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.cry = async () => {
+      const result = await get(`${url}/api/cry`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.stare = async () => {
+      const result = await get(`${url}/api/stare`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.nom = async () => {
+      const result = await get(`${url}/api/nom`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.hold = async () => {
+      const result = await get(`${url}/api/hold`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.lick = async () => {
+      const result = await get(`${url}/api/lick`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.wave = async () => {
+      const result = await get(`${url}/api/wave`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
+
+    /**
+     * @returns {Promise<Buffer>}
+     */
+    this.thumbsup = async () => {
+      const result = await get(`${url}/api/thumbsup`)
+        .set("Authorization", `Bearer ${token}`)
+        .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      return result.body;
+    };
   }
 }
 
