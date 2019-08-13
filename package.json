@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm test && node index.js",
-    "test": "eslint --ignore-path .gitignore .",
-    "lint": "eslint --fix --ignore-path .gitignore ."
+    "test": "eslint --fix --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
