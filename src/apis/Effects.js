@@ -50,7 +50,6 @@ class Effects {
 			.query({ image });
 			return body;
 		}
-		
 	}
 }
 
