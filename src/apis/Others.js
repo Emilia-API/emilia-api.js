@@ -6,14 +6,14 @@ const { version } = require("../../package.json");
  */
 class Text {
 	
-	constructor(token, url) {
+	constructor(token, baseURL) {
 		
 		/**
 		* A random word, most used for hangman
 		* @returns {Promise<object>}
 		*/
 		this.hangman = async () => {
-			const { body } = await get(`${url}/hangman`)
+			const { body } = await get(`${baseURL}/hangman`)
 			.set("Authorization", `Bearer ${token}`)
 			.set("User-Agent", `Emilia-API Wrapper ${version}`);
 			return body;
@@ -24,7 +24,7 @@ class Text {
 		* @returns {Promise<object>}
 		*/
 		this.randomAnime = async () => {
-			const { body } = await get(`${url}/random-anime`)
+			const { body } = await get(`${baseURL}/random-anime`)
 			.set("Authorization", `Bearer ${token}`)
 			.set("User-Agent", `Emilia-API Wrapper ${version}`);
 			return body;
