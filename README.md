@@ -81,10 +81,10 @@ emiliaApi.generators.worthless(image: String<Url>);
 
 ### Overlays API
 ```js
-emiliaApi.Overlays.approved(image: String<Url>);
+emiliaApi.overlays.approved(image: String<Url>);
 ```
 ```js
-emiliaApi.Overlays.rejected(image: String<Url>);
+emiliaApi.overlays.rejected(image: String<Url>);
 ```
 
 ### GIFs API
