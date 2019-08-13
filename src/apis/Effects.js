@@ -26,7 +26,7 @@ class Effects {
 		/**
 		* Draws a fiery border over an image
 		* @param {String} image - A URL to an image
-		* @returns {Promise<buffer>
+		* @returns {Promise<buffer>}
 		*/
 		this.fire = async image => {
 			if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
@@ -40,7 +40,7 @@ class Effects {
 		/**
 		* Draws a fiery border over an image
 		* @param {String} image - A URL to an image
-		* @returns {Promise<buffer>
+		* @returns {Promise<buffer>}
 		*/
 		this.sepia = async image => {
 			if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
