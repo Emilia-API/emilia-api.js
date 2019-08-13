@@ -1,47 +1,35 @@
 const { get } = require("node-superfetch");
-const version = require("../../package.json").version; // eslint-disable-line prefer-destructuring
+const { version } = require("../../package.json");
 
 /**
- * @class Others
+ * @class Text
  */
-class Others {
-  /**
-   * @author Fatir | Sakuta#4350
-   * @constructor
-   * @param {string} token - The token to pass the authentication api.
-   * @param {string} url - Base api url to make a http request.
-   */
-  constructor(token, url) {
-    /**
-     * @returns {Promise<Object>}
-     */
-    this.hangman = async () => {
-      const result = await get(`${url}/api/hangman`)
-        .set("Authorization", `Bearer ${token}`)
-        .set("User-Agent", `Emilia-API Wrapper ${version}`);
-      return result.body;
-    };
-
-    /**
-     * @returns {Promise<Array>}
-     */
-    this.hangmanList = async () => {
-      const result = await get(`${url}/api/hangman/list`)
-        .set("Authorization", `Bearer ${token}`)
-        .set("User-Agent", `Emilia-API Wrapper ${version}`);
-      return result.body;
-    };
-
-    /**
-     * @returns {Promise<Object>}
-     */
-    this.randomAnime = async () => {
-      const result = await get(`${url}/api/random-anime`)
-        .set("Authorization", `Bearer ${token}`)
-        .set("User-Agent", `Emilia-API Wrapper ${version}`);
-      return result.body;
-    };
-  }
+class Text {
+	
+	constructor(token, url) {
+		
+		/**
+		* A random word, most used for hangman
+		* @returns {Promise<object>}
+		*/
+		this.hangman = async () => {
+			const { body } = await get(`${url}/hangman`)
+			.set("Authorization", `Bearer ${token}`)
+			.set("User-Agent", `Emilia-API Wrapper ${version}`);
+			return body;
+		}
+		
+		/**
+		* Get a random anime from https://randomanime.org
+		* @returns {Promise<object>}
+		*/
+		this.randomAnime = async () => {
+			const { body } = await get(`${url}/random-anime`)
+			.set("Authorization", `Bearer ${token}`)
+			.set("User-Agent", `Emilia-API Wrapper ${version}`);
+			return body;
+		}
+	}
 }
 
-module.exports = Others;
+module.exports = Text;
