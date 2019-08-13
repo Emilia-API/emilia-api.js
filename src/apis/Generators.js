@@ -45,7 +45,7 @@ class Generators {
 		this.batslap = async (slapper, slapped) => {
 			if (typeof slapper !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter slapper or that image isn't a string.");
 			if (typeof slapped !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter slapped or that image isn't a string.");
-			const { body } = await get(`${baseURL}/batslal`)
+			const { body } = await get(`${baseURL}/batslap`)
 			.set("Authorization", `Bearer ${token}`)
 			.set("User-Agent", `Emilia-API Wrapper ${version}`)
 			.query({ slapper, slapped });
