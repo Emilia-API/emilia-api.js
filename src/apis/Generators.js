@@ -13,7 +13,7 @@ class Generators {
 		* @param {String} image - A URL to an image
 		* @returns {Promise<buffer>}
 		*/
-		this.3000Years = async image => {
+		this.pokemon3000Years = async image => {
 			if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
 			const { body } = await get(`${baseURL}/3000-years`)
 			.set("Authorization", `Bearer ${token}`)
