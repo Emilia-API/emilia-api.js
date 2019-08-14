@@ -7,192 +7,197 @@ const { version } = require("../../package.json");
 class GIFs {
 	
 	constructor(token, baseURL) {
-		/**
-		* Get a random feeding image
-		* @returns {Promise<buffer>}
-		*/
-		this.feed = async () => {
-			const { body } = await get(`${baseURL}/feed`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random hugging image
-		* @returns {Promise<buffer>}
-		*/
-		this.hug = async () => {
-			const { body } = await get(`${baseURL}/hug`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random kissing image
-		* @returns {Promise<buffer>}
-		*/
-		this.kiss = async () => {
-			const { body } = await get(`${baseURL}/kiss`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random slapping image
-		* @returns {Promise<buffer>}
-		*/
-		this.slap = async () => {
-			const { body } = await get(`${baseURL}/slap`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random tickle image
-		* @returns {Promise<buffer>}
-		*/
-		this.tickle = async () => {
-			const { body } = await get(`${baseURL}/tickle`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random poke image
-		* @returns {Promise<buffer>}
-		*/
-		this.poke = async () => {
-			const { body } = await get(`${baseURL}/poke`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random smug image
-		* @returns {Promise<buffer>}
-		*/
-		this.smug = async () => {
-			const { body } = await get(`${baseURL}/smug`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random pat image
-		* @returns {Promise<buffer>}
-		*/
-		this.pat = async () => {
-			const { body } = await get(`${baseURL}/pat`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random blush image
-		* @returns {Promise<buffer>}
-		*/
-		this.blush = async () => {
-			const { body } = await get(`${baseURL}/blush`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random dance image
-		* @returns {Promise<buffer>}
-		*/
-		this.dance = async () => {
-			const { body } = await get(`${baseURL}/dance`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random crying image
-		* @returns {Promise<buffer>}
-		*/
-		this.cry = async () => {
-			const { body } = await get(`${baseURL}/cry`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random stare image
-		* @returns {Promise<buffer>}
-		*/
-		this.stare = async () => {
-			const { body } = await get(`${baseURL}/stare`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random nom image
-		* @returns {Promise<buffer>}
-		*/
-		this.nom = async () => {
-			const { body } = await get(`${baseURL}/nom`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random hold image
-		* @returns {Promise<buffer>}
-		*/
-		this.hold = async () => {
-			const { body } = await get(`${baseURL}/hold`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random lick image
-		* @returns {Promise<buffer>}
-		*/
-		this.lick = async () => {
-			const { body } = await get(`${baseURL}/lick`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random waving image
-		* @returns {Promise<buffer>}
-		*/
-		this.wave = async () => {
-			const { body } = await get(`${baseURL}/wave`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
-		
-		/**
-		* Get a random thumbsup image
-		* @returns {Promise<buffer>}
-		*/
-		this.thumbsup = async () => {
-			const { body } = await get(`${baseURL}/thumbsup`)
-			.set("Authorization", `Bearer ${token}`)
-			.set("User-Agent", `Emilia-API Wrapper ${version}`);
-			return body;
-		}
+		/** @access private */
+		this.token = token;
+		/** @access private */
+		this.baseURL = baseURL;
+	}
+	
+	/**
+	* Get a random feeding image
+	* @returns {Promise<buffer>}
+	*/
+	async feed() {
+		const { body } = await get(`${this.baseURL}/feed`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random hugging image
+	* @returns {Promise<buffer>}
+	*/
+	async hug() {
+		const { body } = await get(`${this.baseURL}/hug`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random kissing image
+	* @returns {Promise<buffer>}
+	*/
+	async kiss() {
+		const { body } = await get(`${this.baseURL}/kiss`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random slapping image
+	* @returns {Promise<buffer>}
+	*/
+	async slap() {
+		const { body } = await get(`${this.baseURL}/slap`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random tickle image
+	* @returns {Promise<buffer>}
+	*/
+	async tickle() {
+		const { body } = await get(`${this.baseURL}/tickle`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random poke image
+	* @returns {Promise<buffer>}
+	*/
+	async poke() {
+		const { body } = await get(`${this.baseURL}/poke`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random smug image
+	* @returns {Promise<buffer>}
+	*/
+	async smug() {
+		const { body } = await get(`${this.baseURL}/smug`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random pat image
+	* @returns {Promise<buffer>}
+	*/
+	async pat() {
+		const { body } = await get(`${this.baseURL}/pat`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random blush image
+	* @returns {Promise<buffer>}
+	*/
+	async blush() {
+		const { body } = await get(`${this.baseURL}/blush`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random dance image
+	* @returns {Promise<buffer>}
+	*/
+	async dance() {
+		const { body } = await get(`${this.baseURL}/dance`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random crying image
+	* @returns {Promise<buffer>}
+	*/
+	async cry() {
+		const { body } = await get(`${this.baseURL}/cry`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random stare image
+	* @returns {Promise<buffer>}
+	*/
+	async stare() {
+		const { body } = await get(`${this.baseURL}/stare`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random nom image
+	* @returns {Promise<buffer>}
+	*/
+	async nom() {
+		const { body } = await get(`${this.baseURL}/nom`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random hold image
+	* @returns {Promise<buffer>}
+	*/
+	async hold() {
+		const { body } = await get(`${this.baseURL}/hold`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random lick image
+	* @returns {Promise<buffer>}
+	*/
+	async lick() {
+		const { body } = await get(`${this.baseURL}/lick`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random waving image
+	* @returns {Promise<buffer>}
+	*/
+	async wave() {
+		const { body } = await get(`${this.baseURL}/wave`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
+	}
+	
+	/**
+	* Get a random thumbsup image
+	* @returns {Promise<buffer>}
+	*/
+	async thumbsup() {
+		const { body } = await get(`${this.baseURL}/thumbsup`)
+		.set("Authorization", `Bearer ${this.token}`)
+		.set("User-Agent", `Emilia-API Wrapper ${version}`);
+		return body;
 	}
 }
 
