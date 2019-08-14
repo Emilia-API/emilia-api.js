@@ -29,15 +29,17 @@ class Generators {
 	
 	/**
 	* Sends a Minecraft achievement with the text of your choice
+        * @param {String} image - A URL to an image
 	* @param {String} text - The text for the resulting achievement image
 	* @returns {Promise<buffer>}
 	*/
-	async achievement(text) {
+	async achievement(image, text) {
+                if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
 		if (typeof text !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter text or that text isn't a string.");
 		const { body } = await get(`${this.baseURL}/achievement`)
 		.set("Authorization", `Bearer ${this.token}`)
 		.set("User-Agent", `Emilia-API Wrapper ${version}`)
-		.query({ text });
+		.query({ image, text });
 		return body;
 	}
 	
