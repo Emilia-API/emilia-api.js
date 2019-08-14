@@ -1,6 +1,6 @@
 {
   "name": "emilia-api.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Official API wrapper for https://emilia-api.glitch.me/",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,8 @@
     "url": "git+https://github.com/KurokuTetsuya/emilia-api.git"
   },
   "keywords": [
+    "api", 
+    "rest-api",
     "emillia-api",
     "wrapper"
   ],
@@ -31,6 +33,9 @@
     "mocha": "^6.2.0",
     "prettier": "1.18.2"
   },
+  "dependencies": {
+    "node-superfetch": "^0.1.9"
+  }, 
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -45,8 +50,5 @@
       "eslint --fix",
       "git add"
     ]
-  },
-  "dependencies": {
-    "node-superfetch": "^0.1.9"
   }
 }
