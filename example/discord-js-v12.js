@@ -21,7 +21,7 @@ client.on("message", async message => {
     if (command === "achievement") {
         const text = args.join(" ");
         if (!text) return message.reply("Please provide a text!"); // Return if no text provided by user;
-        const image = emilia.manipulationImages.achievement(text);
+        const image = emilia.generators.achievement(message.author.displayAvatarURL({ format: "png", size: 1024 }), text);
         const embed = new MessageEmbed()
             .attachFiles({ attachment: image, name: "achievement.png" })
             .setImage("attachment://achievement.png");
