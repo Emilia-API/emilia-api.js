@@ -30,113 +30,120 @@ Note: When you see a paremeter like this: `(value: DataType)` I am just defining
 
 ## All functions
 
-### Manipulation Images API
+### Effects API
 ```js
-emiliaApi.manipulationImages.pokemon3000Years(image: String<Url>);
+emiliaApi.effects.distort(image: String<Url>, level: Number);
 ```
 ```js
-emiliaApi.manipulationImages.achievement(text: String);
+emiliaApi.effects.fire(image: String<Url>);
 ```
 ```js
-emiliaApi.manipulationImages.approved(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.rejected(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.beautiful(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.brazzers(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.challenger(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.demotivational(title: String, text: String, image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.fire(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.fusion(baseImage: String<Url>, overlayImage: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.thugLife(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.toBeContinued(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.wanted(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.worthless(image: String<Url>);
-```
-```js
-emiliaApi.manipulationImages.distort(image: String<Url>, level: Number);
+emiliaApi.effects.sepia(image: String<Url>);
 ```
 
-### Random images API
+### Generators API
 ```js
-emiliaApi.randomImages.feed()
+emiliaApi.generators.pokemon3000Years(image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.hug()
+emiliaApi.generators.achievement(text: String);
 ```
 ```js
-emiliaApi.randomImages.kiss()
+emiliaApi.generators.batslap(image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.slap()
+emiliaApi.generators.beautiful(image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.tickle()
+emiliaApi.generators.brazzers(image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.poke()
+emiliaApi.generators.challenger(image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.smug()
+emiliaApi.generators.demotivational(title: String, text: String, image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.pat()
+emiliaApi.generators.fusion(baseImage: String<Url>, overlayImage: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.blush()
+emiliaApi.generators.thugLife(image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.dance()
+emiliaApi.generators.toBeContinued(image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.cry()
+emiliaApi.generators.wanted(image: String<Url>);
 ```
 ```js
-emiliaApi.randomImages.stare()
-```
-```js
-emiliaApi.randomImages.nom()
-```
-```js
-emiliaApi.randomImages.hold()
-```
-```js
-emiliaApi.randomImages.lick()
-```
-```js
-emiliaApi.randomImages.wave()
-```
-```js
-emiliaApi.randomImages.thumbsup()
+emiliaApi.generators.worthless(image: String<Url>);
 ```
 
-### Others API
+### Overlays API
 ```js
-emiliaApi.others.hangman()
+emiliaApi.overlays.approved(image: String<Url>);
 ```
 ```js
-emiliaApi.others.hangmanList()
+emiliaApi.overlays.rejected(image: String<Url>);
+```
+
+### GIFs API
+```js
+emiliaApi.GIFs.feed()
 ```
 ```js
-emiliaApi.others.randomAnime()
+emiliaApi.GIFs.hug()
+```
+```js
+emiliaApi.GIFs.kiss()
+```
+```js
+emiliaApi.GIFs.slap()
+```
+```js
+emiliaApi.GIFs.tickle()
+```
+```js
+emiliaApi.GIFs.poke()
+```
+```js
+emiliaApi.GIFs.smug()
+```
+```js
+emiliaApi.GIFs.pat()
+```
+```js
+emiliaApi.GIFs.blush()
+```
+```js
+emiliaApi.GIFs.dance()
+```
+```js
+emiliaApi.GIFs.cry()
+```
+```js
+emiliaApi.GIFs.stare()
+```
+```js
+emiliaApi.GIFs.nom()
+```
+```js
+emiliaApi.GIFs.hold()
+```
+```js
+emiliaApi.GIFs.lick()
+```
+```js
+emiliaApi.GIFs.wave()
+```
+```js
+emiliaApi.GIFs.thumbsup()
+```
+
+### Text API
+```js
+emiliaApi.text.hangman()
+```
+```js
+emiliaApi.text.randomAnime()
 ```

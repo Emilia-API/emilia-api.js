@@ -1,29 +1,31 @@
-const ManipulationImages = require("./src/apis/ManipulationImages");
-const Others = require("./src/apis/Others");
-const RandomImages = require("./src/apis/RandomImages");
+const Effects = require("./src/apis/Effects");
+const Generators = require("./src/apis/Generators");
+const Overlays = require("./src/apis/Overlays");
+const GIFs = require("./src/apis/GIFs");
+const Text = require("./src/apis/Text");
+const { version } = require("./package.json");
 
 /**
- * @class Client
- * @classdesc emilia-api.js - Official API wrapper for https://emilia-api.glitch.me
- */
+* @class Client
+* @classdesc emilia-api.js - Official API wrapper for https://emilia-api.glitch.me
+*/
 class EmiliaAPI {
-  /**
-   * @author Fatir | Sakuta#4350
-   * @constructor
-   * @param {string} token - Your Emilia-api access token.
-   */
-  constructor(token) {
-    if (typeof token !== "string")
-      throw new Error(
-        "[EMILIA_API_ERROR] Please make sure your token is a string"
-      );
 
-    this.baseURL = "https://emilia-api.glitch.me/";
-    this.version = require("./package.json").version;
-    this.manipulationImages = new ManipulationImages(token, this.baseURL);
-    this.randomImages = new RandomImages(token, this.baseURL);
-    this.others = new Others(token, this.baseURL);
-  }
+    /**
+	  * @constructor
+	  * @param {string} token - Your Emilia-api access token
+	  */
+    constructor(token) {
+        if (typeof token !== "string") throw new Error("[EMILIA_API_ERROR] Please make sure your token is a string");
+        this.baseURL = "https://emilia-api.glitch.me/api";
+        this.version = version;
+        this.effects = new Effects(token, this.baseURL);
+        this.generators = new Generators(token, this.baseURL);
+        this.overlays = new Overlays(token, this.baseURL);
+        this.GIFs = new GIFs(token, this.baseURL);
+        this.text = new Text(token, this.baseURL);
+    }
+
 }
 
 module.exports = EmiliaAPI;
