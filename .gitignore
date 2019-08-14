@@ -11,3 +11,4 @@ shrinkwrap.yaml
 node_modules
 .vscode
 test.js
+package-lock.json
