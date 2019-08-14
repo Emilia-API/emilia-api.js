@@ -6,7 +6,7 @@ const { version } = require("../../package.json");
 */
 class Generators {
 	
-	constructor(token, b aseURL) {
+	constructor(token, baseURL) {
 		/** @access private */
 		this.token = token;
 		/** @access private */
