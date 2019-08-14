@@ -18,23 +18,6 @@ module.exports = {
             "all",
             { nestedBinaryExpressions: false }
         ],
-        "valid-jsdoc": [
-            "warn",
-            {
-                requireReturn: false,
-                requireReturnDescription: false,
-                preferType: {
-                    String: "string",
-                    Number: "number",
-                    Boolean: "boolean",
-                    Symbol: "symbol",
-                    function: "Function",
-                    object: "Object",
-                    Date: "date",
-                    error: "Error"
-                }
-            }
-        ],
         "accessor-pairs": "warn",
         "array-callback-return": "error",
         complexity: "off",
