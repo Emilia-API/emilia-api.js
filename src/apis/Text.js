@@ -43,7 +43,8 @@ module.exports = Text;
 * @typedef {Object} hangmanResponse - The response for text.hangman
 * @prop {String} word - The random word
 */
-//* @typedef {Object} randomAnimeResponse - The response for text.randomAnime
+
+/** @typedef {Object} randomAnimeResponse - The response for text.randomAnime
 * @prop {Array} details - The details of resulting anime
 * @prop {String} thumbnail - The thumbnail URL
 * @prop {String} description - The description of resulting anime
