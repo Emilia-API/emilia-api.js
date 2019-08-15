@@ -14,10 +14,10 @@ class Generators {
     }
 
     /**
-  * Draws an image over Pokémon's "It's been 3000 years" meme
-  * @param {string} image - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws an image over Pokémon's "It's been 3000 years" meme
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async pokemon3000Years(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/3000-years`)
@@ -28,11 +28,11 @@ class Generators {
     }
 
     /**
-  * Sends a Minecraft achievement with the text of your choice
+    * Sends a Minecraft achievement with the text of your choice
     * @param {string} image - A URL to an image
-  * @param {string} text - The text for the resulting achievement image
-  * @returns {Promise<buffer>}
-  */
+    * @param {string} text - The text for the resulting achievement image
+    * @returns {Promise<buffer>}
+    */
     async achievement(image, text) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         if (typeof text !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter text or that text isn't a string.");
@@ -44,11 +44,11 @@ class Generators {
     }
 
     /**
-  * A batman slapping meme
-  * @param {string} slapper - A URL to an image
-  * @param {string} slapped - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * A batman slapping meme
+    * @param {string} slapper - A URL to an image
+    * @param {string} slapped - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async batslap(slapper, slapped) {
         if (typeof slapper !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter slapper or that image isn't a string.");
         if (typeof slapped !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter slapped or that image isn't a string.");
@@ -60,10 +60,10 @@ class Generators {
     }
 
     /**
-  * Draws a user's avatar over Gravity Falls "Oh, this? This is beautiful." meme
-  * @param {string} image - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws a user's avatar over Gravity Falls "Oh, this? This is beautiful." meme
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async beautiful(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/beautiful`)
@@ -74,10 +74,10 @@ class Generators {
     }
 
     /**
-  * Draws an image with the Brazzers logo in the corner
-  * @param {string} image - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws an image with the Brazzers logo in the corner
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async brazzers(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/brazzers`)
@@ -88,11 +88,11 @@ class Generators {
     }
 
     /**
-  * Draws an image over Super Smash Bros "Challenger Approaching" screen
-  * @param {string} image - A URL to an image
-  * @param {boolean} [silhouetted=false] - Whether the image is should be silhouetted
-  * @returns {Promise<buffer>}
-  */
+    * Draws an image over Super Smash Bros "Challenger Approaching" screen
+    * @param {string} image - A URL to an image
+    * @param {boolean} [silhouetted=false] - Whether the image is should be silhouetted
+    * @returns {Promise<buffer>}
+    */
     async challenger(image, silhouetted = false) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/challenger`)
@@ -103,12 +103,12 @@ class Generators {
     }
 
     /**
-  * Draws an image and the text you specify as a demotivational poster
-  * @param {string} title - The title for the poster
-  * @param {string} text - The poster description
-  * @param {string} image - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws an image and the text you specify as a demotivational poster
+    * @param {string} title - The title for the poster
+    * @param {string} text - The poster description
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async demotivational(title, text, image) {
         if (typeof title !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter title or that title isn't a string.");
         if (typeof text !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter text or that text isn't a string.");
@@ -121,11 +121,11 @@ class Generators {
     }
 
     /**
-  * Draws baseImage over overlayImage
-  * @param {string} baseImage - A URL to an image
-  * @param {string} overlayImage - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws baseImage over overlayImage
+    * @param {string} baseImage - A URL to an image
+    * @param {string} overlayImage - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async fusion(baseImage, overlayImage) {
         if (typeof baseImage !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter baseImage or that image isn't a string.");
         if (typeof overlayImage !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter overlayImage or that image isn't a string.");
@@ -137,10 +137,10 @@ class Generators {
     }
 
     /**
-  * Draws "Thug Life" over an image
-  * @param {string} image - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws "Thug Life" over an image
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async thugLife(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/thug-life`)
@@ -151,10 +151,10 @@ class Generators {
     }
 
     /**
-  * Draws an image with the "To Be Continued..." arrow
-  * @param {string} image - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws an image with the "To Be Continued..." arrow
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async toBeContinued(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/to-be-continued`)
@@ -165,10 +165,10 @@ class Generators {
     }
 
     /**
-  * Draws an image over a wanted poster
-  * @param {string} image - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws an image over a wanted poster
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async wanted(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/wanted`)
@@ -179,10 +179,10 @@ class Generators {
     }
 
     /**
-    *  Draws an image over Gravity Falls "Oh, this? This is worthless." meme
-  * @param {string} image - A URL to an image
-  * @returns {Promise<buffer>}
-  */
+    * Draws an image over Gravity Falls "Oh, this? This is worthless." meme
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async worthless(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/worthless`)
