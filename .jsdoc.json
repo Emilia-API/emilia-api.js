@@ -19,6 +19,9 @@
         "template": "node_modules/docdash"
     },
     "templates": {
+        "default": {
+          "includeDate": false
+        },
         "cleverLinks": false,
         "monospaceLinks": false
      }, 
