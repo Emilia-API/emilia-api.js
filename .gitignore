@@ -8,7 +8,6 @@ shrinkwrap.yaml
 .git
 
 # runtime data
-node_modules
+node_modules/
 .vscode
-test.js
 package-lock.json
