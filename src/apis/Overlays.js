@@ -14,10 +14,10 @@ class Overlays {
     }
 
     /**
-	  * Draws a "approved" stamp over an image
-	  * @param {string} image - A URL to an image
-	  * @returns {Promise<buffer>}
-	  */
+    * Draws a "approved" stamp over an image
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async approved(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/approved`)
@@ -28,10 +28,10 @@ class Overlays {
     }
 
     /**
-	  * Draws a "rejected" stamp over an image
-	  * @param {string} image - A URL to an image
-	  * @returns {Promise<buffer>}
-	  */
+    * Draws a "rejected" stamp over an image
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
     async rejected(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/rejected`)

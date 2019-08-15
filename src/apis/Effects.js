@@ -14,11 +14,11 @@ class Effects {
     }
 
     /**
-	   * Draws an image but distorted
-	   * @param {string} image - A URL to an image
-	   * @param {number} [level=1] - The level of distorted
-	   * @returns {Promise<buffer>}
- 	   */
+   * Draws an image but distorted
+   * @param {string} image - A URL to an image
+   * @param {number} [level=1] - The level of distorted
+   * @returns {Promise<buffer>}
+    */
     async distort(image, level = 1) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/distort`)
@@ -29,10 +29,10 @@ class Effects {
     }
 
     /**
-	   * Draws a fiery border over an image
-	   * @param {string} image - A URL to an image
+   * Draws a fiery border over an image
+   * @param {string} image - A URL to an image
      * @returns {Promise<buffer>}
-	   */
+   */
     async fire(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/fire`)
@@ -43,10 +43,10 @@ class Effects {
     }
 
     /**
-	   * Draws a fiery border over an image
-	   * @param {string} image - A URL to an image
-	   * @returns {Promise<buffer>}
-	   */
+   * Draws a fiery border over an image
+   * @param {string} image - A URL to an image
+   * @returns {Promise<buffer>}
+   */
     async sepia(image) {
         if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
         const { body } = await get(`${this.baseURL}/sepia`)
