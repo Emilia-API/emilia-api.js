@@ -73,3 +73,5 @@ class Greetings {
     return body;
   }
 }
+
+module.exports = Greetings;
