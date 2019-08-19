@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "eslint --ignore-path .eslintignore .",
-    "lint": "eslint --fix --ignore-path .eslintignore ."
+    "lint": "eslint --fix --ignore-path .eslintignore .",
+    "docs": "jsdoc -c .jsdoc.json"
   },
   "repository": {
     "type": "git",
