@@ -46,7 +46,7 @@ emiliaApi.effects.sepia(image: String<Url>);
 emiliaApi.generators.pokemon3000Years(image: String<Url>);
 ```
 ```js
-emiliaApi.generators.achievement(text: String);
+emiliaApi.generators.achievement(image: String<Url>, text: String);
 ```
 ```js
 emiliaApi.generators.batslap(image: String<Url>);
