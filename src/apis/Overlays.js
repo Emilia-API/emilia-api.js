@@ -41,6 +41,19 @@ class Overlays {
         return body;
     }
 
+    /**
+    * Draws an image over a halloween border
+    * @param {string} image - A URL to an image
+    * @returns {Promise<buffer>}
+    */
+    async halloween(image) {
+        if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
+        const { body } = await get(`${this.baseURL}/halloween`)
+            .set("Authorization", `Bearer ${this.token}`)
+            .set("User-Agent", `Emilia-API Wrapper ${version}`)
+            .query({ image });
+        return body;
+    }
 }
 
 module.exports = Overlays;
