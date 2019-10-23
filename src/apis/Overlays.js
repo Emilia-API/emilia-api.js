@@ -6,54 +6,55 @@ const { version } = require("../../package.json");
 */
 class Overlays {
 
-    constructor(token, baseURL) {
-        /** @access private */
-        this.token = token;
-        /** @access private */
-        this.baseURL = baseURL;
-    }
+  constructor(token, baseURL) {
+    /** @access private */
+    this.token = token;
+    /** @access private */
+    this.baseURL = baseURL;
+  }
 
-    /**
+  /**
     * Draws a "approved" stamp over an image
     * @param {string} image - A URL to an image
     * @returns {Promise<buffer>}
     */
-    async approved(image) {
-        if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
-        const { body } = await get(`${this.baseURL}/approved`)
-            .set("Authorization", `Bearer ${this.token}`)
-            .set("User-Agent", `Emilia-API Wrapper ${version}`)
-            .query({ image });
-        return body;
-    }
+  async approved(image) {
+    if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
+    const { body } = await get(`${this.baseURL}/approved`)
+      .set("Authorization", `Bearer ${this.token}`)
+      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .query({ image });
+    return body;
+  }
 
-    /**
+  /**
     * Draws a "rejected" stamp over an image
     * @param {string} image - A URL to an image
     * @returns {Promise<buffer>}
     */
-    async rejected(image) {
-        if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
-        const { body } = await get(`${this.baseURL}/rejected`)
-            .set("Authorization", `Bearer ${this.token}`)
-            .set("User-Agent", `Emilia-API Wrapper ${version}`)
-            .query({ image });
-        return body;
-    }
+  async rejected(image) {
+    if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
+    const { body } = await get(`${this.baseURL}/rejected`)
+      .set("Authorization", `Bearer ${this.token}`)
+      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .query({ image });
+    return body;
+  }
 
-    /**
+  /**
     * Draws an image over a halloween border
     * @param {string} image - A URL to an image
     * @returns {Promise<buffer>}
     */
-    async halloween(image) {
-        if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
-        const { body } = await get(`${this.baseURL}/halloween`)
-            .set("Authorization", `Bearer ${this.token}`)
-            .set("User-Agent", `Emilia-API Wrapper ${version}`)
-            .query({ image });
-        return body;
-    }
+  async halloween(image) {
+    if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
+    const { body } = await get(`${this.baseURL}/halloween`)
+      .set("Authorization", `Bearer ${this.token}`)
+      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .query({ image });
+    return body;
+  }
+
 }
 
 module.exports = Overlays;
