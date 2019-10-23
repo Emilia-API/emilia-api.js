@@ -202,7 +202,7 @@ class GIFs {
 
     /**
     * Get a random cuddling images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async cuddle() {
       const { body } = await get(`${this.baseURL}/cuddle`)
@@ -213,7 +213,7 @@ class GIFs {
 
     /**
     * Get a random bite images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async bite() {
       const { body } = await get(`${this.baseURL}/bite`)
@@ -224,7 +224,7 @@ class GIFs {
 
     /**
     * Get a random lewd images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async lewd() {
       const { body } = await get(`${this.baseURL}/lewd`)
@@ -235,7 +235,7 @@ class GIFs {
 
     /**
     * Get a random pout images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async pout() {
       const { body } = await get(`${this.baseURL}/pout`)
@@ -246,7 +246,7 @@ class GIFs {
 
     /**
     * Get a random boop images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async boop() {
       const { body } = await get(`${this.baseURL}/boop`)
@@ -257,7 +257,7 @@ class GIFs {
 
     /**
     * Get a random happy images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async happy() {
       const { body } = await get(`${this.baseURL}/happy`)
@@ -268,7 +268,7 @@ class GIFs {
 
     /**
     * Get a random punch images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async punch() {
       const { body } = await get(`${this.baseURL}/punch`)
@@ -279,7 +279,7 @@ class GIFs {
 
     /**
     * Get a random confused images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async confused() {
       const { body } = await get(`${this.baseURL}/confused`)
@@ -290,7 +290,7 @@ class GIFs {
 
     /**
     * Get a random smile images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async smile() {
       const { body } = await get(`${this.baseURL}/smile`)
@@ -301,7 +301,7 @@ class GIFs {
 
     /**
     * Get a random shout images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async shout() {
       const { body } = await get(`${this.baseURL}/shout`)
@@ -312,7 +312,7 @@ class GIFs {
 
     /**
     * Get a random laughing images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async laugh() {
       const { body } = await get(`${this.baseURL}/laugh`)
@@ -323,7 +323,7 @@ class GIFs {
 
     /**
     * Get a random amazed images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async amazed() {
       const { body } = await get(`${this.baseURL}/amazed`)
@@ -334,7 +334,7 @@ class GIFs {
 
     /**
     * Get a random shocked images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async shocked() {
       const { body } = await get(`${this.baseURL}/shocked`)
@@ -345,7 +345,7 @@ class GIFs {
 
     /**
     * Get a random running images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async run() {
       const { body } = await get(`${this.baseURL}/run`)
@@ -356,7 +356,7 @@ class GIFs {
 
     /**
     * Get a random cheer images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async cheer() {
       const { body } = await get(`${this.baseURL}/cheer`)
@@ -367,7 +367,7 @@ class GIFs {
 
     /**
     * Get a random clap images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async clap() {
       const { body } = await get(`${this.baseURL}/clap`)
@@ -378,7 +378,7 @@ class GIFs {
 
     /**
     * Get a random scared images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async scared() {
       const { body } = await get(`${this.baseURL}/scared`)
@@ -389,7 +389,7 @@ class GIFs {
 
     /**
     * Get a random suprised images
-    @returns {Promise<buffer>}
+    * @returns {Promise<buffer>}
     */
     async suprised() {
       const { body } = await get(`${this.baseURL}/suprised`)
