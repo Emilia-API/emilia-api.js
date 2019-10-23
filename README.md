@@ -11,7 +11,7 @@
   <a href='https://github.com/KurokuTetsuya/emilia-api.js/blob/master/package.json'><img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/KurokuTetsuya/emilia-api.js.svg"></a>
 </p>
 
-<p align="center">Official API wrapper for <a href="https://emilia-api.glitch.me">Emilia API</a></p>
+<p align="center">Official API wrapper for <a href="https://emilia.shrf.xyz/">Emilia API</a></p>
 
 ## Getting started
 Installing...
@@ -29,6 +29,15 @@ const emiliaApi = new EmiliaAPI("Your token here");
 Note: When you see a paremeter like this: `(value: DataType)` I am just defining the type of value it takes. That does not mean it's an object. If it has {} around it then it is an object.
 
 ## All functions
+
+
+### Greetings API
+```js
+emiliApi.greetings.welcome(options: Object)
+```
+```js
+emiliApi.greetings.farewell(options: Object)
+```
 
 ### Effects API
 ```js
@@ -86,6 +95,9 @@ emiliaApi.overlays.approved(image: String<Url>);
 ```js
 emiliaApi.overlays.rejected(image: String<Url>);
 ```
+```js
+emiliaApi.overlays.halloween(image: String<Url>);
+```
 
 ### GIFs API
 ```js
@@ -139,6 +151,61 @@ emiliaApi.GIFs.wave()
 ```js
 emiliaApi.GIFs.thumbsup()
 ```
+```js
+emiliaApi.GIFs.cuddle()
+```
+```js
+emiliaApi.GIFs.bite()
+```
+```js
+emiliaApi.GIFs.lewd()
+```
+```js
+emiliaApi.GIFs.pout()
+```
+```js
+emiliaApi.GIFs.boop()
+```
+```js
+emiliaApi.GIFs.happy()
+```
+```js
+emiliaApi.GIFs.punch()
+```
+```js
+emiliaApi.GIFs.confused()
+```
+```js
+emiliaApi.GIFs.smile()
+```
+```js
+emiliaApi.GIFs.shout()
+```
+```js
+emiliaApi.GIFs.laugh()
+```
+```js
+emiliaApi.GIFs.amazed()
+```
+```js
+emiliaApi.GIFs.shocked()
+```
+```js
+emiliaApi.GIFs.run()
+```
+```js
+emiliaApi.GIFs.cheer()
+```
+```js
+emiliaApi.GIFs.clap()
+```
+```js
+emiliaApi.GIFs.scared()
+```
+```js
+emiliaApi.GIFs.surprised()
+```
+
 
 ### Text API
 ```js
