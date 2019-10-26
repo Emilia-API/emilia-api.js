@@ -13,9 +13,9 @@ const { version } = require("./package.json");
 class EmiliaAPI {
 
   /**
-    * @constructor
-    * @param {string} token - Your Emilia-api access token
-    */
+  * @constructor
+  * @param {string} token - Your Emilia-api access token
+  */
   constructor(token) {
     if (typeof token !== "string") throw new Error("[EMILIA_API_ERROR] Please make sure your token is a string");
     this.baseURL = "https://emilia.shrf.xyz/api";
