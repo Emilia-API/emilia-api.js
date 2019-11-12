@@ -206,6 +206,38 @@ class Generators {
     return body;
   }
 
+  /**
+    * Sends a "Lisa Presentation" meme with the presentation of your choice
+    * @param {string} text - A text for the meme
+    * @returns {Promise<buffer>}
+    */
+  async lisaPresentasion(text) {
+    if (typeof text !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter text or that text isn't a string.");
+    const { body } = await get(`${this.baseURL}/lisa-presentasion`)
+      .set("Authorization", `Bearer ${this.token}`)
+      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .query({ text });
+    return body;
+  }
+
+  /**
+    * Sends a Gru's Plan meme with steps of your choice
+    * @param {string} firstStep - The first step of the plan
+    * @param {string} secondStep - The second step of the plan
+    * @param {string} thirdStep - The second step of the plan
+    * @returns {Promise<buffer>}
+    */
+  async gruPlan(firstStep, secondStep, thirdStep) {
+    if (typeof firstStep !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter firstStep or that firstStep isn't a string.");
+    if (typeof secondStep !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter secondStep or that secondStep isn't a string.");
+    if (typeof thirdStep !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter thirdStep or that thirdStep isn't a string.");
+    const { body } = await get(`${this.baseURL}/gru-plan`)
+      .set("Authorization", `Bearer ${this.token}`)
+      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .query({ firstStep, secondStep, thirdStep });
+    return body;
+  }
+
 }
 
 module.exports = Generators;
