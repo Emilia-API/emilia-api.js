@@ -87,6 +87,12 @@ emiliaApi.generators.wanted(image: String<Url>);
 ```js
 emiliaApi.generators.worthless(image: String<Url>);
 ```
+```js
+emiliaApi.generators.lisaPresentasion(text: String);
+```
+```js
+emiliaApi.generators.gruPlan(firstStep: String, secondStep: String, thirdStep: String);
+```
 
 ### Overlays API
 ```js
@@ -97,6 +103,9 @@ emiliaApi.overlays.rejected(image: String<Url>);
 ```
 ```js
 emiliaApi.overlays.halloween(image: String<Url>);
+```
+```js
+emiliaApi.overlays.bobRoss(image: String<Url>);
 ```
 
 ### GIFs API
