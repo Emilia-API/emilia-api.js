@@ -23,7 +23,7 @@ class Effects {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/distort`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image, level });
     return body;
   }
@@ -37,7 +37,7 @@ class Effects {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/fire`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -51,7 +51,7 @@ class Effects {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/sepia`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
