@@ -37,7 +37,7 @@ class Greetings {
     const messageColor = options.messageColor ? options.messageColor : "";
     const { body } = await get(`${this.baseURL}/greetings`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ type: "welcome", image, backgroundImage, name, message, circleColor, nameColor, messageColor });
     return body;
   }
@@ -66,7 +66,7 @@ class Greetings {
     const messageColor = options.messageColor ? options.messageColor : "";
     const { body } = await get(`${this.baseURL}/greetings`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ type: "farewell", image, backgroundImage, name, message, circleColor, nameColor, messageColor });
     return body;
   }
