@@ -22,7 +22,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/3000-years`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -38,7 +38,7 @@ class Generators {
     if (typeof text !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter text or that text isn't a string.");
     const { body } = await get(`${this.baseURL}/achievement`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image, text });
     return body;
   }
@@ -54,7 +54,7 @@ class Generators {
     if (typeof slapped !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter slapped or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/batslap`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ slapper, slapped });
     return body;
   }
@@ -68,7 +68,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/beautiful`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -82,7 +82,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/brazzers`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -97,7 +97,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/challenger`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image, silhouetted });
     return body;
   }
@@ -115,7 +115,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/demotivational`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ title, text, image });
     return body;
   }
@@ -131,7 +131,7 @@ class Generators {
     if (typeof overlayImage !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter overlayImage or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/fusion`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ baseImage, overlayImage });
     return body;
   }
@@ -145,7 +145,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/thug-life`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -159,7 +159,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/to-be-continued`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -173,7 +173,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/wanted`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -187,7 +187,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/worthless`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -201,7 +201,7 @@ class Generators {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/triggered`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -215,7 +215,7 @@ class Generators {
     if (typeof text !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter text or that text isn't a string.");
     const { body } = await get(`${this.baseURL}/lisa-presentasion`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ text });
     return body;
   }
@@ -233,7 +233,7 @@ class Generators {
     if (typeof thirdStep !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter thirdStep or that thirdStep isn't a string.");
     const { body } = await get(`${this.baseURL}/gru-plan`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ firstStep, secondStep, thirdStep });
     return body;
   }

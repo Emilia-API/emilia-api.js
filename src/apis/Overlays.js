@@ -22,7 +22,7 @@ class Overlays {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/approved`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -36,7 +36,7 @@ class Overlays {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/rejected`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -50,7 +50,7 @@ class Overlays {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/halloween`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }
@@ -64,7 +64,7 @@ class Overlays {
     if (typeof image !== "string") throw new Error("[EMILIA-API-ERROR] Missing parameter image or that image isn't a string.");
     const { body } = await get(`${this.baseURL}/bob-ross`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`)
+      .set("User-Agent", `Emilia-API Wrapper v${version}`)
       .query({ image });
     return body;
   }

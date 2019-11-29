@@ -20,7 +20,7 @@ class GIFs {
   async feed() {
     const { body } = await get(`${this.baseURL}/feed`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -31,7 +31,7 @@ class GIFs {
   async hug() {
     const { body } = await get(`${this.baseURL}/hug`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -42,7 +42,7 @@ class GIFs {
   async kiss() {
     const { body } = await get(`${this.baseURL}/kiss`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -53,7 +53,7 @@ class GIFs {
   async slap() {
     const { body } = await get(`${this.baseURL}/slap`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -64,7 +64,7 @@ class GIFs {
   async tickle() {
     const { body } = await get(`${this.baseURL}/tickle`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -75,7 +75,7 @@ class GIFs {
   async poke() {
     const { body } = await get(`${this.baseURL}/poke`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -86,7 +86,7 @@ class GIFs {
   async smug() {
     const { body } = await get(`${this.baseURL}/smug`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -97,7 +97,7 @@ class GIFs {
   async pat() {
     const { body } = await get(`${this.baseURL}/pat`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -108,7 +108,7 @@ class GIFs {
   async blush() {
     const { body } = await get(`${this.baseURL}/blush`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -119,7 +119,7 @@ class GIFs {
   async dance() {
     const { body } = await get(`${this.baseURL}/dance`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -130,7 +130,7 @@ class GIFs {
   async cry() {
     const { body } = await get(`${this.baseURL}/cry`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -141,7 +141,7 @@ class GIFs {
   async stare() {
     const { body } = await get(`${this.baseURL}/stare`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -152,7 +152,7 @@ class GIFs {
   async nom() {
     const { body } = await get(`${this.baseURL}/nom`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -163,7 +163,7 @@ class GIFs {
   async hold() {
     const { body } = await get(`${this.baseURL}/hold`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -174,7 +174,7 @@ class GIFs {
   async lick() {
     const { body } = await get(`${this.baseURL}/lick`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -185,7 +185,7 @@ class GIFs {
   async wave() {
     const { body } = await get(`${this.baseURL}/wave`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -196,7 +196,7 @@ class GIFs {
   async thumbsup() {
     const { body } = await get(`${this.baseURL}/thumbsup`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -207,7 +207,7 @@ class GIFs {
   async cuddle() {
     const { body } = await get(`${this.baseURL}/cuddle`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -218,7 +218,7 @@ class GIFs {
   async bite() {
     const { body } = await get(`${this.baseURL}/bite`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -229,7 +229,7 @@ class GIFs {
   async lewd() {
     const { body } = await get(`${this.baseURL}/lewd`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -240,7 +240,7 @@ class GIFs {
   async pout() {
     const { body } = await get(`${this.baseURL}/pout`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -251,7 +251,7 @@ class GIFs {
   async boop() {
     const { body } = await get(`${this.baseURL}/boop`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -262,7 +262,7 @@ class GIFs {
   async happy() {
     const { body } = await get(`${this.baseURL}/happy`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -273,7 +273,7 @@ class GIFs {
   async punch() {
     const { body } = await get(`${this.baseURL}/punch`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -284,7 +284,7 @@ class GIFs {
   async confused() {
     const { body } = await get(`${this.baseURL}/confused`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -295,7 +295,7 @@ class GIFs {
   async smile() {
     const { body } = await get(`${this.baseURL}/smile`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -306,7 +306,7 @@ class GIFs {
   async shout() {
     const { body } = await get(`${this.baseURL}/shout`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -317,7 +317,7 @@ class GIFs {
   async laugh() {
     const { body } = await get(`${this.baseURL}/laugh`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -328,7 +328,7 @@ class GIFs {
   async amazed() {
     const { body } = await get(`${this.baseURL}/amazed`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -339,7 +339,7 @@ class GIFs {
   async shocked() {
     const { body } = await get(`${this.baseURL}/shocked`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -350,7 +350,7 @@ class GIFs {
   async run() {
     const { body } = await get(`${this.baseURL}/run`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -361,7 +361,7 @@ class GIFs {
   async cheer() {
     const { body } = await get(`${this.baseURL}/cheer`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -372,7 +372,7 @@ class GIFs {
   async clap() {
     const { body } = await get(`${this.baseURL}/clap`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -383,7 +383,7 @@ class GIFs {
   async scared() {
     const { body } = await get(`${this.baseURL}/scared`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -394,7 +394,7 @@ class GIFs {
   async suprised() {
     const { body } = await get(`${this.baseURL}/suprised`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 

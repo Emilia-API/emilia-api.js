@@ -20,7 +20,7 @@ class Text {
   async hangman() {
     const { body } = await get(`${this.baseURL}/hangman`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
@@ -31,7 +31,7 @@ class Text {
   async randomAnime() {
     const { body } = await get(`${this.baseURL}/random-anime`)
       .set("Authorization", `Bearer ${this.token}`)
-      .set("User-Agent", `Emilia-API Wrapper ${version}`);
+      .set("User-Agent", `Emilia-API Wrapper v${version}`);
     return body;
   }
 
