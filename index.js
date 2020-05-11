@@ -8,7 +8,7 @@ const { version } = require("./package.json");
 
 /**
 * @class Client
-* @classdesc emilia-api.js - Official API wrapper for https://emilia.shrf.xyz
+* @classdesc emilia-api.js - Official API wrapper for https://emilia-api.glitch.me
 */
 class EmiliaAPI {
 
