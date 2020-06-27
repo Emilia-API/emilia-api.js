@@ -18,7 +18,7 @@ class EmiliaAPI {
   */
   constructor(token) {
     if (typeof token !== "string") throw new Error("[EMILIA_API_ERROR] Please make sure your token is a string");
-    this.baseURL = "https://emilia-api.glitch.me/api";
+    this.baseURL = "https://emilia-api.xyz/api";
     this.version = version;
     this.effects = new Effects(token, this.baseURL);
     this.generators = new Generators(token, this.baseURL);
